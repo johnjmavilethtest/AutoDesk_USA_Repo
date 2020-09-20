@@ -24,6 +24,11 @@ public class Home extends WebDriverUtils{                      //Rule 1
 
 	@FindBy(linkText="Products")                                 //Rule 2
 	private WebElement products;
+	
+	public WebElement getProduct()
+	{
+		return products;
+	}
 
 	@FindBy(linkText="Opportunities")                                 //Rule 2
 	private WebElement OpportunitiesLnk;

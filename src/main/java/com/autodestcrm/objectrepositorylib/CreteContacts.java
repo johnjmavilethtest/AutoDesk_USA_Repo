@@ -21,6 +21,8 @@ public class CreteContacts extends WebDriverUtils{
 	}
 	
 	
+	@FindBy(name="firstname")
+	private WebElement frtNameEdt;
 	
 	@FindBy(name="lastname")
 	private WebElement lstNameEdt;
@@ -30,6 +32,12 @@ public class CreteContacts extends WebDriverUtils{
 	
 	@FindBy(xpath="//input[@title='Save [Alt+S]']")
 	private WebElement saveBtn;
+	
+	@FindBy(xpath = "//input[@name='assigntype' and @value='U']")
+	private WebElement assignUserRd;
+	
+	@FindBy(xpath="//input[@name='assigntype' and @value='T']")
+	private WebElement assignGroupRd;
 	
 	/**
 	 * create contact with orgName
@@ -61,6 +69,40 @@ public class CreteContacts extends WebDriverUtils{
 
 	   saveBtn.click();
    }
-	
-
+   /*
+    * Last Name text field
+    */
+	public WebElement getLastName()
+	{
+		return lstNameEdt;
+	}
+	/*
+	 * Firstname text field
+	 */
+   public WebElement getFirstName()
+   {
+	   return frtNameEdt;
+   }
+   /*
+    * User Radio button
+    */
+   
+   public WebElement getUserRadioBtn()
+   {
+	   return assignUserRd;
+   }
+   /*
+    * Group radio button
+    */
+   public WebElement getGroupRadioBtn()
+   {
+	   return assignGroupRd;
+   }
+   /*
+    * Save button
+    */
+   public WebElement getSaveBtn()
+   {
+	   return saveBtn;
+   }
 }

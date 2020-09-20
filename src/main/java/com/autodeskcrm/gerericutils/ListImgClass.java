@@ -12,7 +12,7 @@ import org.testng.ITestResult;
 
 
 public class ListImgClass implements ITestListener{
-	
+
 	/*
 	 * @Override public void onTestFailure(ITestResult result) {
 	 * 
@@ -31,49 +31,42 @@ public class ListImgClass implements ITestListener{
 	 * 
 	 * } }
 	 */
-
-
-	@Override
-	public void onFinish(ITestContext arg0) {
+	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public void onStart(ITestContext arg0) {
+	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
+	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 	}
 
-
-	@Override
-	public void onTestSkipped(ITestResult arg0) {
+	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public void onTestStart(ITestResult arg0) {
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public void onTestSuccess(ITestResult arg0) {
+	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
+		
+	}
+
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
 	
-	}
+	
 
-	@Override
-	public void onTestFailure(ITestResult arg0) {
-		// TODO Auto-generated method stub
-		
-	}
 
 }
