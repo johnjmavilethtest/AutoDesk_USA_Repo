@@ -18,25 +18,25 @@ public class CreateOrganizationTest extends BaseClass{
 	public void createORgWithTypeTest() throws Throwable {
 
 		
-		/* read test script specific data*/
-		String orgName = excelLib.getExcelData("org", 1, 2)+ "_"+ wLib.getRamDomNum();
-		String org_Type = excelLib.getExcelData("org", 1, 3);
-		String org_industry = excelLib.getExcelData("org", 1, 4);
+//		 read test script specific data
+		String orgName = excelLib.getExcelData("","org", 1, 2)+ "_"+ wLib.getRamDomNum();
+		String org_Type = excelLib.getExcelData("","org", 1, 3);
+		String org_industry = excelLib.getExcelData("","org", 1, 4);
 
 		
-		/*step 3 : navigate to Org page*/
+//		step 3 : navigate to Org page
         Home hp = new Home(driver);
         hp.getOrgLink().click();
 		
-		/*step 4 : navigate to create new Org page*/
+//		step 4 : navigate to create new Org page
          Organization orgp = new Organization(driver);
          orgp.getCreteOrgImg().click();
 		
-		/*step 5 : create Org*/
+//		step 5 : create Org
          CreateOrganization createOrgP = new CreateOrganization(driver);
          createOrgP.creteOrg(orgName, org_Type, org_industry);
         		 
-		/*step 6 : verify the Org*/
+//		step 6 : verify the Org
          OrganizationIno orgInfoP = new OrganizationIno(driver);
          String actMdg = orgInfoP.getOrgSucessfullMsgText().getText();
 
@@ -47,21 +47,21 @@ public class CreateOrganizationTest extends BaseClass{
 	
 	@Test
 	public void createOrgTest() throws Throwable {
-		/* read test script specific data*/
-		String orgName = excelLib.getExcelData("org", 4 ,2)+ "_"+ wLib.getRamDomNum();
-		/*step 3 : navigate to Org page*/
+//		 read test script specific data
+		String orgName = excelLib.getExcelData("","org", 4 ,2)+ "_"+ wLib.getRamDomNum();
+//		step 3 : navigate to Org page
         Home hp = new Home(driver);
         hp.getOrgLink().click();
 		
-		/*step 4 : navigate to create new Org page*/
+//		step 4 : navigate to create new Org page
          Organization orgp = new Organization(driver);
          orgp.getCreteOrgImg().click();
 		
-		/*step 5 : create Org*/
+//		step 5 : create Org
          CreateOrganization createOrgP = new CreateOrganization(driver);
          createOrgP.creteOrg(orgName);
         		 
-		/*step 6 : verify the Org*/
+//		step 6 : verify the Org
          OrganizationIno orgInfoP = new OrganizationIno(driver);
          String actMdg = orgInfoP.getOrgSucessfullMsgText().getText();
 

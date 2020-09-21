@@ -39,6 +39,18 @@ public class CreteContacts extends WebDriverUtils{
 	@FindBy(xpath="//input[@name='assigntype' and @value='T']")
 	private WebElement assignGroupRd;
 	
+	@FindBy(xpath="//b[text()='Copy Mailing Address']/../input")
+	private WebElement copyMailingAddressRbtn;
+	
+	@FindBy(xpath="//b[text()='Copy Other Address']/../input")
+	private WebElement copyOtherAddressRbtn;
+	
+	@FindBy(name="mailingstreet")
+	private WebElement mailingstreetTxa;
+	
+	@FindBy(name="otherstreet")
+	private WebElement otherStreetTxa;
+	
 	/**
 	 * create contact with orgName
 	 * @param conatctLastName
@@ -105,4 +117,28 @@ public class CreteContacts extends WebDriverUtils{
    {
 	   return saveBtn;
    }
+public WebElement getCopyMailingAddressRbtn() {
+	return copyMailingAddressRbtn;
+}
+public void setCopyMailingAddressRbtn(WebElement copyMailingAddressRbtn) {
+	this.copyMailingAddressRbtn = copyMailingAddressRbtn;
+}
+public WebElement getCopyOtherAddressRbtn() {
+	return copyOtherAddressRbtn;
+}
+public void setCopyOtherAddressRbtn(WebElement copyOtherAddressRbtn) {
+	this.copyOtherAddressRbtn = copyOtherAddressRbtn;
+}
+public WebElement getMailingstreetTxa() {
+	return mailingstreetTxa;
+}
+public void setMailingstreetTxa(WebElement mailingstreetTxa) {
+	this.mailingstreetTxa = mailingstreetTxa;
+}
+public WebElement getOtherStreetTxa() {
+	return otherStreetTxa;
+}
+public void setOtherStreetTxa(WebElement otherStreetTxa) {
+	this.otherStreetTxa = otherStreetTxa;
+}
 }

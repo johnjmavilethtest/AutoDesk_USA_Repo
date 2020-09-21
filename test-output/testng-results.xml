@@ -2,16 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="231" started-at="2020-09-16T13:10:28 IST" finished-at="2020-09-16T13:10:28 IST">
+  <suite name="Default suite" duration-ms="18248" started-at="2020-09-21T06:26:17Z" finished-at="2020-09-21T06:26:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="231" started-at="2020-09-16T13:10:28 IST" finished-at="2020-09-16T13:10:28 IST">
-      <class name="com.autodesk.crm.quotetest.CreateQouteWithFedExTest">
-        <test-method status="PASS" signature="createQutoWithFedExTest()[pri:0, instance:com.autodesk.crm.quotetest.CreateQouteWithFedExTest@3fd7a715]" name="createQutoWithFedExTest" duration-ms="47" started-at="2020-09-16T13:10:28 IST" finished-at="2020-09-16T13:10:28 IST">
+    <test name="Default test" duration-ms="18248" started-at="2020-09-21T06:26:17Z" finished-at="2020-09-21T06:26:35Z">
+      <class name="com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress">
+        <test-method status="PASS" signature="configBS()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="configBS" is-config="true" duration-ms="11" started-at="2020-09-21T06:26:17Z" finished-at="2020-09-21T06:26:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createQutoWithFedExTest -->
-      </class> <!-- com.autodesk.crm.quotetest.CreateQouteWithFedExTest -->
+        </test-method> <!-- configBS -->
+        <test-method status="PASS" signature="configBC()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="configBC" is-config="true" duration-ms="2908" started-at="2020-09-21T06:26:17Z" finished-at="2020-09-21T06:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="configBM" is-config="true" duration-ms="4536" started-at="2020-09-21T06:26:20Z" finished-at="2020-09-21T06:26:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="PASS" signature="ContactWithCopyMailingAddress()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="ContactWithCopyMailingAddress" duration-ms="9523" started-at="2020-09-21T06:26:25Z" finished-at="2020-09-21T06:26:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContactWithCopyMailingAddress -->
+        <test-method status="PASS" signature="configAm()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="configAm" is-config="true" duration-ms="1160" started-at="2020-09-21T06:26:34Z" finished-at="2020-09-21T06:26:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAm -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="configAC" is-config="true" duration-ms="98" started-at="2020-09-21T06:26:35Z" finished-at="2020-09-21T06:26:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method status="PASS" signature="confiAs()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="confiAs" is-config="true" duration-ms="1" started-at="2020-09-21T06:26:35Z" finished-at="2020-09-21T06:26:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confiAs -->
+      </class> <!-- com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

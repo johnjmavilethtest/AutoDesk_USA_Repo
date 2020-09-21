@@ -25,6 +25,7 @@ public class WebDriverUtils {
 	 */
 	public void waitForPagetoLoad(WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 	}
 	
 	/**
