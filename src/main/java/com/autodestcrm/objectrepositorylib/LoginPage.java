@@ -11,7 +11,7 @@ import com.autodeskcrm.gerericutils.FileLib;
  * @author Deepak
  *
  */
-public class Login {                //Rule-1 
+public class LoginPage {                //Rule-1 
 	
 	
 	@FindBy(name="user_name")          //Rule 2
@@ -53,7 +53,7 @@ public class Login {                //Rule-1
 		loginBtn.click();
 		
 	}
-	public Login(WebDriver driver) {                             //Rule 5
+	public LoginPage(WebDriver driver) {                             //Rule 5
 		PageFactory.initElements(driver, this);
 	}
 	

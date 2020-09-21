@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import com.autodestcrm.objectrepositorylib.Login;
+import com.autodestcrm.objectrepositorylib.LoginPage;
 /**
  * 
  * @author Deepak
@@ -80,7 +80,7 @@ public class BaseClass {
 		driver.get(URL);
 		
 		/*step 2 : login*/
-	     Login lp = new Login(driver);
+	     LoginPage lp = new LoginPage(driver);
 	     lp.loginToApp(USERNAME, PASSWORD);
 		
 	}

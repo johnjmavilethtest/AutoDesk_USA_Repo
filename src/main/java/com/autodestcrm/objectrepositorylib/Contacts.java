@@ -2,6 +2,7 @@ package com.autodestcrm.objectrepositorylib;
 
 import javax.xml.xpath.XPath;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -79,11 +80,17 @@ public class Contacts {
 	{
 		return selectedContactpage;
 	}
-	
-	
 
 	public WebElement getcreteContactImg() {
 		return creteContactImg;
+	}
+	
+	@FindBy(xpath="//span[@class='genHeaderSmall']")
+	private WebElement noContactsFoundText;
+	
+	public WebElement noContactsFoundText()
+	{
+		return noContactsFoundText;
 	}
 
 }

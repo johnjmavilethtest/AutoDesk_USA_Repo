@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18248" started-at="2020-09-21T06:26:17Z" finished-at="2020-09-21T06:26:35Z">
+  <suite started-at="2020-09-21T12:55:54Z" name="Default suite" finished-at="2020-09-21T12:56:58Z" duration-ms="64427">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18248" started-at="2020-09-21T06:26:17Z" finished-at="2020-09-21T06:26:35Z">
-      <class name="com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress">
-        <test-method status="PASS" signature="configBS()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="configBS" is-config="true" duration-ms="11" started-at="2020-09-21T06:26:17Z" finished-at="2020-09-21T06:26:17Z">
+    <test started-at="2020-09-21T12:55:54Z" name="Default test" finished-at="2020-09-21T12:56:58Z" duration-ms="64427">
+      <class name="com.autdeskcrm.conatcttest.CreateContactFromSearchTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactFromSearchTest@a4102b8]" started-at="2020-09-21T18:25:54Z" name="configBS" finished-at="2020-09-21T18:25:54Z" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method status="PASS" signature="configBC()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="configBC" is-config="true" duration-ms="2908" started-at="2020-09-21T06:26:17Z" finished-at="2020-09-21T06:26:20Z">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactFromSearchTest@a4102b8]" started-at="2020-09-21T18:25:54Z" name="configBC" finished-at="2020-09-21T18:26:03Z" duration-ms="9626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method status="PASS" signature="configBM()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="configBM" is-config="true" duration-ms="4536" started-at="2020-09-21T06:26:20Z" finished-at="2020-09-21T06:26:25Z">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactFromSearchTest@a4102b8]" started-at="2020-09-21T18:26:03Z" name="configBM" finished-at="2020-09-21T18:26:12Z" duration-ms="8990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method status="PASS" signature="ContactWithCopyMailingAddress()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="ContactWithCopyMailingAddress" duration-ms="9523" started-at="2020-09-21T06:26:25Z" finished-at="2020-09-21T06:26:34Z">
+        <test-method signature="createContactFromSearch()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactFromSearchTest@a4102b8]" started-at="2020-09-21T18:26:12Z" name="createContactFromSearch" finished-at="2020-09-21T18:26:55Z" duration-ms="42828" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ContactWithCopyMailingAddress -->
-        <test-method status="PASS" signature="configAm()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="configAm" is-config="true" duration-ms="1160" started-at="2020-09-21T06:26:34Z" finished-at="2020-09-21T06:26:35Z">
+        </test-method> <!-- createContactFromSearch -->
+        <test-method is-config="true" signature="configAm()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactFromSearchTest@a4102b8]" started-at="2020-09-21T18:26:55Z" name="configAm" finished-at="2020-09-21T18:26:58Z" duration-ms="2569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAm -->
-        <test-method status="PASS" signature="configAC()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="configAC" is-config="true" duration-ms="98" started-at="2020-09-21T06:26:35Z" finished-at="2020-09-21T06:26:35Z">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactFromSearchTest@a4102b8]" started-at="2020-09-21T18:26:58Z" name="configAC" finished-at="2020-09-21T18:26:58Z" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method status="PASS" signature="confiAs()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress@42e26948]" name="confiAs" is-config="true" duration-ms="1" started-at="2020-09-21T06:26:35Z" finished-at="2020-09-21T06:26:35Z">
+        <test-method is-config="true" signature="confiAs()[pri:0, instance:com.autdeskcrm.conatcttest.CreateContactFromSearchTest@a4102b8]" started-at="2020-09-21T18:26:59Z" name="confiAs" finished-at="2020-09-21T18:26:59Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confiAs -->
-      </class> <!-- com.autdeskcrm.conatcttest.CreateContactWithCopyMailingAddress -->
+      </class> <!-- com.autdeskcrm.conatcttest.CreateContactFromSearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

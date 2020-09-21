@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.autodestcrm.objectrepositorylib.Campaign">
+      <class name="com.autdeskcrm.conatcttest.CreateContactFromSearchTest">
         <methods>
-          <include name="sysoTest"/>
+          <include name="confiAs"/>
+          <include name="createContactFromSearch"/>
+          <include name="configAm"/>
+          <include name="configBM"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAC"/>
         </methods>
-      </class> <!-- com.autodestcrm.objectrepositorylib.Campaign -->
+      </class> <!-- com.autdeskcrm.conatcttest.CreateContactFromSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
