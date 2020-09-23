@@ -14,13 +14,10 @@ import com.autodeskcrm.gerericutils.WebDriverUtils;
 public class Home extends WebDriverUtils{                      //Rule 1
 	WebDriver driver;
 	
-	
-	
 	public Home(WebDriver driver) {                             //Rule 5
 	    this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
 
 	@FindBy(linkText="Products")                                 //Rule 2
 	private WebElement products;
@@ -57,7 +54,6 @@ public class Home extends WebDriverUtils{                      //Rule 1
 		return moreLink;
 	}
 
-
 	public WebElement getLogoutLnk() {
 		return logoutLnk;
 	}
@@ -73,18 +69,33 @@ public class Home extends WebDriverUtils{                      //Rule 1
 	@FindBy(linkText="//img[@src='themes/softed/images/user.PNG']")
 	private WebElement adminImg;
 	
+	@FindBy(xpath = "//a[@class='hdrLink']")
+	private WebElement verifyHomePage;
+	
+	@FindBy(xpath = "(//td[@class='small'])[4]")
+	private WebElement settingsBtn;
+	
+	@FindBy(xpath = "//a[text()='CRM Settings']")
+	private WebElement CRMsettingsLink;
+	
 	public WebElement getConatctLink() {                               //Rule 4
 		return conatctLink;
 	}
-
 
 	public WebElement getOrgLink() {
 		return orgLink;
 	}
 
-
 	public WebElement getCampaignLink() {
 		return campaignLink;
+	}
+	
+	public void settings() {
+		settingsBtn.click();
+	}
+	public void clickOnCRMSettings() {
+		
+		CRMsettingsLink.click();;
 	}
 	
 	/**
@@ -104,6 +115,10 @@ public class Home extends WebDriverUtils{                      //Rule 1
     	waitForElemnetVsibility(driver, quotelnk);
     	quotelnk.click();
     }
+    
+    public WebElement VerifyHomePage() {
+		return verifyHomePage;
+	}
 
 }
 

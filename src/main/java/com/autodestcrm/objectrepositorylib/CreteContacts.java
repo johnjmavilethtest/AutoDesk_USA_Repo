@@ -141,4 +141,29 @@ public WebElement getOtherStreetTxa() {
 public void setOtherStreetTxa(WebElement otherStreetTxa) {
 	this.otherStreetTxa = otherStreetTxa;
 }
+
+@FindBy(xpath = "//span[@class='lvtHeaderText']")
+private WebElement verifyCreateContactPage;
+
+public WebElement VerifyCreateContactPage()
+{
+	return verifyCreateContactPage;
+}
+
+@FindBy(name="salutationtype")
+private WebElement firstNameSalutation;
+
+@FindBy(xpath= "//input[@id='jscal_field_birthday']")
+private WebElement birthDateTxb;
+
+public WebElement clickOnSalutationDropDown()
+{
+	return firstNameSalutation;
+}
+
+public WebElement ClickOnBirthDate() {
+	return birthDateTxb;
+}
+
+
 }

@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.autdeskcrm.conatcttest.CreateContactFromSearchTest">
+      <class name="com.autdeskcrm.conatcttest.CreateNewRoleTest">
         <methods>
           <include name="confiAs"/>
-          <include name="createContactFromSearch"/>
           <include name="configAm"/>
           <include name="configBM"/>
           <include name="configBS"/>
           <include name="configBC"/>
+          <include name="createNewRole"/>
           <include name="configAC"/>
         </methods>
-      </class> <!-- com.autdeskcrm.conatcttest.CreateContactFromSearchTest -->
+      </class> <!-- com.autdeskcrm.conatcttest.CreateNewRoleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

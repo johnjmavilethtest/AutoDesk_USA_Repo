@@ -1,5 +1,6 @@
 package com.autdeskcrm.conatcttest;
 
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.autodeskcrm.gerericutils.BaseClass;
@@ -10,11 +11,14 @@ import com.autodestcrm.objectrepositorylib.Home;
 
 import junit.framework.Assert;
 
-public class CreateContactFromSearchTest extends BaseClass{
 /**
  * @author Zakarsh
  * @throws Throwable
  */
+
+public class CreateContactFromSearchTest extends BaseClass{
+
+	/*Test case number 61*/
 
 	@Test
 	public void createContactFromSearch() throws Throwable
@@ -25,18 +29,21 @@ public class CreateContactFromSearchTest extends BaseClass{
 		
 		/*step1: Navigate to contacts page*/
 		Home h=new Home(driver);
+		h.VerifyHomePage();
+		
 		h.getConatctLink().click();
 		
 		/*Step2: click on search Now button*/
 		Contacts c=new Contacts(driver);
+		c.VerifyContactPage();
 		c.getSearchNowBtn().click();
 		c.noContactsFoundText();
 		
 		/*create new contact with mandatory inputs*/
 		c.getcreteContactImg().click();
 		CreteContacts cc=new CreteContacts(driver);
+		cc.VerifyCreateContactPage();
 		cc.creteConatct(contactName);
-		
 		
 		/*verify the created contact*/
 		CoantctInfoPage ci=new CoantctInfoPage(driver);

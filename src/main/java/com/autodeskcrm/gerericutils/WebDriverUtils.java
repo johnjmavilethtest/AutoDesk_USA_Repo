@@ -1,5 +1,8 @@
 package com.autodeskcrm.gerericutils;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
@@ -136,7 +139,15 @@ public class WebDriverUtils {
 	}
 	public void alertCancel(WebDriver driver) {
 		driver.switchTo().alert().dismiss();
-		
+	}
+	
+	public String CalenderSelect(WebDriver driver) {		
+		SimpleDateFormat dataformat= new SimpleDateFormat("YYYY-MM-DD");
+		Calendar cal=Calendar.getInstance();
+		Date date=cal.getTime();
+		Date date1=new Date();
+		String Todaydate=dataformat.format(date);
+		return Todaydate;
 	}
 	
      public void moveMouseToElemnet(WebDriver driver , WebElement element) {

@@ -92,5 +92,12 @@ public class Contacts {
 	{
 		return noContactsFoundText;
 	}
+	
+	@FindBy(xpath  ="//a[@class='hdrLink']")
+	private WebElement verifyContactPage;
 
+	public WebElement VerifyContactPage()
+	{
+		return verifyContactPage;
+	}
 }
