@@ -17,6 +17,7 @@ public class CreateNewRolesPage extends WebDriverUtils{
 	WebDriver driver;
 	public CreateNewRolesPage(WebDriver driver) 
 	{
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	

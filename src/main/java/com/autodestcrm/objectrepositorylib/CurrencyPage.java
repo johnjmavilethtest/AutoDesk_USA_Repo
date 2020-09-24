@@ -11,6 +11,8 @@ public class CurrencyPage extends WebDriverUtils {
 	
 	WebDriver driver;
 	public CurrencyPage(WebDriver driver) {
+	
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 

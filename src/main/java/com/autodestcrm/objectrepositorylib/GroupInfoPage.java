@@ -11,6 +11,8 @@ public class GroupInfoPage extends WebDriverUtils {
 	
 	WebDriver driver;
 	public GroupInfoPage(WebDriver driver) {
+		
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 

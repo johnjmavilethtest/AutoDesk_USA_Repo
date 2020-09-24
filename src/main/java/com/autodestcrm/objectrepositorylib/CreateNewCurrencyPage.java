@@ -12,6 +12,7 @@ public class CreateNewCurrencyPage extends WebDriverUtils{
 	WebDriver driver;
 	public CreateNewCurrencyPage(WebDriver driver)
 	{
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -29,8 +30,8 @@ public class CreateNewCurrencyPage extends WebDriverUtils{
 		return currencyNameTxb;
 	}
 	
-	public void enterCurrencyRate(String currncyRate) {
-		conversionRareTxb.sendKeys(currncyRate);
+	public WebElement enterCurrencyRate(WebDriver driver) {
+		return conversionRareTxb;
 	}
 	
 	public void clickOnSaveBtn() {

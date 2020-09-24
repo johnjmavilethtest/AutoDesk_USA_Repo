@@ -30,6 +30,9 @@ public class CRMSettingsPage extends WebDriverUtils{
 	@FindBy(xpath = "//a[contains(text(),'Roles')]")
 	private WebElement rolesLink;
 	
+	@FindBy(xpath = "//a[contains(text(),'Users')]")
+	private WebElement usersLink;
+	
 	@FindBy(xpath = "//td[contains(text(),'Other Settings')]")
 	private WebElement otherSettings;
 	
@@ -45,6 +48,11 @@ public class CRMSettingsPage extends WebDriverUtils{
 	public void clickOnRoles()
 	{
 		rolesLink.click();
+	}
+	
+	public void clickOnUsers()
+	{
+		usersLink.click();
 	}
 	
 	public WebElement moveToOtherSettings()

@@ -22,8 +22,10 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class Contacts {
 	
+	WebDriver driver;
 	public Contacts(WebDriver driver) {                             //Rule 5
 		   
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -49,6 +51,9 @@ public class Contacts {
 	@FindBy(linkText = "More Information")
 	private WebElement moreInfoLk;
 	
+	@FindBy(xpath = "//a[text()='Create Filter']")
+	private WebElement createFilterLnk;
+	
 	public WebElement getSearchText()
 	{
 		return searchTextBx;
@@ -65,6 +70,11 @@ public class Contacts {
 	public WebElement getMoreInfoLink()
 	{
 		return moreInfoLk;
+	}
+	
+	public void clickOnFilterLnk()
+	{
+		createFilterLnk.click();
 	}
 	@FindBy(xpath = " //span[@class='lvtHeaderText']")
 	private WebElement moreInfoHd;

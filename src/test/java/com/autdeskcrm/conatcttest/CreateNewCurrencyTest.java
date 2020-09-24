@@ -39,7 +39,7 @@ public class CreateNewCurrencyTest extends BaseClass{
 		/*create currency with mandatory fields*/
 		CreateNewCurrencyPage ncp=new CreateNewCurrencyPage(driver);
 		ncp.select(ncp.selectCurrencyName(), currencyName);
-		ncp.enterCurrencyRate(converRate);
+		ncp.enterCurrencyRate(driver).sendKeys(converRate);;
 		ncp.clickOnSaveBtn();
 		
 		

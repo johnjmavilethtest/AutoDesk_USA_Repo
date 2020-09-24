@@ -10,6 +10,8 @@ public class RolesPage extends WebDriverUtils{
 
 	WebDriver driver;
 	public RolesPage(WebDriver driver) {
+		
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	

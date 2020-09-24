@@ -16,7 +16,8 @@ public class CreteContacts extends WebDriverUtils{
 	
 	WebDriver driver;
 	public CreteContacts(WebDriver driver) {                             //Rule 5
-		   this.driver = driver;
+		  
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -51,6 +52,14 @@ public class CreteContacts extends WebDriverUtils{
 	@FindBy(name="otherstreet")
 	private WebElement otherStreetTxa;
 	
+	@FindBy(xpath = "//input[@name='otherstate']")
+	private WebElement otherState;
+	
+	@FindBy(xpath = "//input[@name='otherzip']")
+	private WebElement otherpostalCode;
+	
+	@FindBy(xpath = "//input[@name='othercity']")
+	private WebElement otherCity;
 	/**
 	 * create contact with orgName
 	 * @param conatctLastName
@@ -117,6 +126,20 @@ public class CreteContacts extends WebDriverUtils{
    {
 	   return saveBtn;
    }
+   
+   public WebElement enterOtherCity(WebDriver driver)
+	{
+		return otherCity;
+	}
+   
+   public WebElement enterOtherpostalCode(WebDriver driver)
+	{
+		return otherpostalCode;
+	}
+   public WebElement enterOtherState(WebDriver driver)
+	{
+		return otherState;
+	}
 public WebElement getCopyMailingAddressRbtn() {
 	return copyMailingAddressRbtn;
 }

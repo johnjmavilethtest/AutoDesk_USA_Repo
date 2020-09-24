@@ -30,7 +30,6 @@ public class CreateContactFromSearchTest extends BaseClass{
 		/*step1: Navigate to contacts page*/
 		Home h=new Home(driver);
 		h.VerifyHomePage();
-		
 		h.getConatctLink().click();
 		
 		/*Step2: click on search Now button*/

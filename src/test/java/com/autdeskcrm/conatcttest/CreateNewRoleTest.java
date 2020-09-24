@@ -23,16 +23,16 @@ public class CreateNewRoleTest extends BaseClass{
 		String roleName=excelLib.getExcelData("./testData/ContactModule.xlsx","TC_61-70", 15, 3)+"_"+wLib.getRamDomNum();
 		
 		
-		/*step1: navigate to home page*/
+		/*step1: navigate to home page and click on settings*/
 		Home h=new Home(driver);
 		h.settings();
 		h.clickOnCRMSettings();
 		
-		/*step2: click on settings*/
+		/*step2: click on roles link*/
 		CRMSettingsPage sp=new CRMSettingsPage(driver);
 		sp.clickOnRoles();
 		
-		/*step3: click on roles link*/
+		/*step3: click on create roles button*/
 		RolesPage rp=new RolesPage(driver);
 		wLib.moveMouseToElemnet(driver, rp.clickOnCreateRolesBtn());
 		rp.clickOnCreateRolesBtn().click();
